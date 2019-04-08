@@ -10,88 +10,87 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Formación</a>
-
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="navbar__link">Inicio</a>
+            <a href="#" class="navbar__link">Servicios</a>
+            <a href="#" class="navbar__link">Nosotros</a>
+            <a href="#" class="navbar__link">Formación</a>
+            <a href="#" class="navbar__link">Referencia</a>
+            <a href="#" class="navbar__link">Contacto</a>
             <!-- Desplegable -->
-            <div class="desplegable">
-                <button class="formacion">
-                    <div>
+            <div class="dropdown">
+                <!-- <button class="dropdown__btn"></button> -->
+                    <div class="dropdown__menu">
                         <ul>
-                            <li><a href="#">Angular 7 + Animations - <small>18 Ene 2019</small></a></li>
-                            <li><a href="#">Angular 7 + Avanzado - <small>Próximamente</small></a></li>
-                            <li><a href="#">Docker + Kubernetes - <small>Próximamente</small></a></li>
-                            <li><a href="#">NodeJS - <small>Próximamente</small></a></li>
-                            <li><a href="#">CSS + Sass Avanzado - <small>Próximamente</small></a></li>
-                            <li><a href="#">VueJS 2 - <small>Próximamente</small></a></li>
+                            <li><a href="#" class="dropdown__item">Angular 7 + Animations - <small class="dropdown__detail">18 Ene 2019</small></a></li>
+                            <li><a href="#" class="dropdown__item">Angular 7 + Avanzado - <small class="dropdown__detail">Próximamente</small></a></li>
+                            <li><a href="#" class="dropdown__item">Docker + Kubernetes - <small class="dropdown__detail">Próximamente</small></a></li>
+                            <li><a href="#" class="dropdown__item">NodeJS - <small class="dropdown__detail">Próximamente</small></a></li>
+                            <li><a href="#" class="dropdown__item">CSS + Sass Avanzado - <small class="dropdown__detail">Próximamente</small></a></li>
+                            <li><a href="#" class="dropdown__item">VueJS 2 - <small class="dropdown__detail">Próximamente</small></a></li>
                         </ul>
                     </div>
             </div> <!-- Fin desplegable -->
 
-            <a href="#">Referencia</a>
-            <a href="#">Contacto</a>
 
-            <form action="#">
-                <label for="buscador">Buscar en campus</label>
-                <div>
-                    <input type="search" id="buscador">
-                    <div>
+            <form action="#" class="form form--nav">
+                <label for="buscador" class="form__label">Buscar en campus</label>
+                <div class="dropdown dropdown--search">
+                    <input type="search" id="buscador" class="form__input">
+                    <div class="dropdown__menu dropdown__menu--search">
                         <ul>
-                            <li><a href="#"> 7</a></li>
-                            <li><a href="#"> 7 + Animations</a></li>
-                            <li><a href="#"> 7 Avanzado</a></li>
+                            <li class="dropdown__item"><a href="#"> 7</a></li>
+                            <li class="dropdown__item"><a href="#"> 7 + Animations</a></li>
+                            <li class="dropdown__item"><a href="#"> 7 Avanzado</a></li>
                             <ul>
-                                <li class="">Otros cursos de formación</li>
-                                <!-- Aunque no es un elemento en sí de la lista (al ser un pseudo encabezado),tal vez se le puede aplicar la clase por si no recordamos la cuestión del cambio de rol. Sería una opcion? -->
-                                <li><a href="#">Bootcamp</a></li>
+                                <li class="dropdown__item dropdown__item--line-top">Otros cursos de formación</li>
+                                <!-- Aunque no es un elemento en sí de la lista (al ser un pseudo encabezado),tal vez se le puede aplicar la por si no recordamos la cuestión del cambio de rol. Sería una opcion? -->
+                                <li class="dropdown__item"><a href="#">Bootcamp</a></li>
                             </ul>
                         </ul>
                     </div>
                 </div>
 
-                <button type="submit">Buscar</button>
+                <button type="submit" class="btn btn--warning">Buscar</button>
             </form>
         </nav>
 
-        <h1>¡Hola a todos!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
+        <h1 class="header__main">¡Hola a todos!</h1>
+        <p class="header__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
             fugiat eligendi <strong>quidem in iure tempora</strong>! Consectetur ex, autem amet maxime odit. Adipisci
             quod, tenetur
             reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#">Más información</a>
+        <a href="#" class="btn btn--success">Más información</a>
     </header>
 
-    <main>
+    <main class="main">
         <!-- Inicio de los cursos -->
-        <div>
-            <article>
-                <h2><a href="#">Angular 7 + Animations</a></h2>
-                <img src="..." alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+        <div class="courses-container">
+            <article class="course">
+                <h2 class="course__heading"><a href="#">Angular 7 + Animations</a></h2>
+                <img src="images/01.png" width="93" height="93" alt="" class="course__img">
+                <p class="course__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
                     molestiae
                     fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
                     tenetur
                     reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.
                 </p>
             </article>
-            <article>
-                <h2><a href="#">Docker + Kubernetes</a></h2>
-                <img src="..." alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+            <article class="course">
+                <h2 class="course__heading"><a href="#">Docker + Kubernetes</a></h2>
+                <img src="images/01.png" width="93" height="93" alt="" class="course__img">
+                <p class="course__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
                     molestiae
                     fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
                     tenetur
                     reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.
                 </p>
             </article>
-            <article>
-                <h2><a href="#">NodeJS</a></h2>
-                <img src="..." alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+            <article class="course">
+                <h2 class="course__heading"><a href="#">NodeJS</a></h2>
+                <img src="images/01.png" width="93" height="93" alt="" class="course__img">
+                <p class="course__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
                     molestiae
                     fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
                     tenetur
@@ -103,20 +102,20 @@
         <!-- Fin de los cursos -->
 
         <!-- Video y suscripcion -->
-        <article>
-            <div>
-                <video width="" controls>
+        <article class="media-container">
+            <div class="media">
+                <video width="" controls class="media__item">
                     <source src="..." type="...">
                 </video>
 
-                <h2>Próximas convocatorias</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                <h2 class="media__heading">Próximas convocatorias</h2>
+                <p class="media__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
                     molestiae.
                 </p>
-                <form action="#">
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Introduce un email válido">
-                    <button type="submit">Me apunto!</button>
+                <form action="#" class="form">
+                    <label for="email" class="form__label form__label--join"></label>
+                    <input type="email" id="email" placeholder="Introduce un email válido" class="form__input">
+                    <button type="submit" class="btn btn--primary">Me apunto!</button>
                 </form>
             </div>
         </article>
@@ -126,27 +125,27 @@
         <!-- Servicio de apoyo -->
 
         <article>
-            <h2>Servicios de apoyo profesional</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
+            <h2 class="header__main header__main--medium">Servicios de apoyo profesional</h2>
+            <p class="header__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
                 fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
                 reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse
                 aspernatur, natus quidem voluptas.
             </p>
 
-            <a href="#">Lorem ipsum</a>
+            <a href="#" class="btn btn--primary">Lorem ipsum</a>
         </article>
         <!--Fin Servicio de apoyo -->
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Formación</a></li>
-            <li><a href="#">Referencia</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li class="footer__link"><a href="#">Inicio</a></li>
+            <li class="footer__link"><a href="#">Servicios</a></li>
+            <li class="footer__link"><a href="#">Nosotros</a></li>
+            <li class="footer__link"><a href="#">Formación</a></li>
+            <li class="footer__link"><a href="#">Referencia</a></li>
+            <li class="footer__link"><a href="#">Contacto</a></li>
         </ul>
         <span class="copy">&copy;Company 2018</span>
     </footer>
