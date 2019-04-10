@@ -1,155 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ejercicio día 2</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="toggler.js"></script>
+    <title>Ejercicio</title>
+
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="#" class="navbar__link">Inicio</a>
-            <a href="#" class="navbar__link">Servicios</a>
-            <a href="#" class="navbar__link">Nosotros</a>
-            <a href="#" class="navbar__link">Formación</a>
-            <a href="#" class="navbar__link">Referencia</a>
-            <a href="#" class="navbar__link">Contacto</a>
-            <!-- Desplegable -->
-            <div class="dropdown">
-                <!-- <button class="dropdown__btn"></button> -->
-                    <div class="dropdown__menu">
-                        <ul>
-                            <li><a href="#" class="dropdown__item">Angular 7 + Animations - <small class="dropdown__detail">18 Ene 2019</small></a></li>
-                            <li><a href="#" class="dropdown__item">Angular 7 + Avanzado - <small class="dropdown__detail">Próximamente</small></a></li>
-                            <li><a href="#" class="dropdown__item">Docker + Kubernetes - <small class="dropdown__detail">Próximamente</small></a></li>
-                            <li><a href="#" class="dropdown__item">NodeJS - <small class="dropdown__detail">Próximamente</small></a></li>
-                            <li><a href="#" class="dropdown__item">CSS + Sass Avanzado - <small class="dropdown__detail">Próximamente</small></a></li>
-                            <li><a href="#" class="dropdown__item">VueJS 2 - <small class="dropdown__detail">Próximamente</small></a></li>
+
+    <header class="site-header">
+        <div class="container-flex">
+            <nav class="navbar">
+                <a href="#" class="navbar__item">Inicio</a>
+                <a href="#" class="navbar__item">Servicios</a>
+                <a href="#" class="navbar__item">Nosotros</a>
+
+
+                <div class="dropdown dropdown__link navbar__item">
+                    <button type="button" class="dropdown__btn" id="dropdownMenuButton" aria-haspopup="true"
+                        aria-expanded="false">Formación</button>
+                    <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="dropdown__list">
+                            <li><a href="#" class="dropdown__item">Angular 7 + Animations - <span
+                                        class="dropdown__info">18
+                                        Ene 2019</span></a></li>
+                            <li><a href="#" class="dropdown__item">Angular 7 Avanzado - <span
+                                        class="dropdown__info">Proximamente</span></a></li>
+                            <li><a href="#" class="dropdown__item"> + Kubernetes - <span
+                                        class="dropdown__info">Proximamente</span></a></li>
+                            <li><a href="#" class="dropdown__item">NodeJS - <span
+                                        class="dropdown__info">Proximamente</span></a></li>
+                            <li><a href="#" class="dropdown__item">CSS + Sass Avanzado - <span
+                                        class="dropdown__info">Proximamente</span></a></li>
+                            <li><a href="#" class="dropdown__item">VueJS 2 - <span
+                                        class="dropdown__info">Proximamente</span></a></li>
                         </ul>
                     </div>
-            </div> <!-- Fin desplegable -->
+                </div>
+                <a href="#" class="navbar__item">Referencia</a>
+                <a href="#" class="navbar__item">Contacto</a>
 
+            </nav>
 
-            <form action="#" class="form form--nav">
-                <label for="buscador" class="form__label">Buscar en campus</label>
-                <div class="dropdown dropdown--search">
-                    <input type="search" id="buscador" class="form__input">
-                    <div class="dropdown__menu dropdown__menu--search">
+            <form action="..." class="search">
+                <label for="search" class="search__label">Buscar en Campus</label>
+                <div class="dropdown">
+                    <input type="search" id="search" class="dropdown__search" autofocus>
+                    <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
                         <ul>
-                            <li class="dropdown__item"><a href="#"> 7</a></li>
-                            <li class="dropdown__item"><a href="#"> 7 + Animations</a></li>
-                            <li class="dropdown__item"><a href="#"> 7 Avanzado</a></li>
+                            <li><a href="#" class="dropdown__item">Angular 7</a></li>
+                            <li><a href="#" class="dropdown__item">Angular 7 + Animations</a></li>
+                            <li><a href="#" class="dropdown__item">Angular 7 Avanzado</a></li>
+                            <p role="heading" class="dropdown__heading">Otros cursos de formación</p>
                             <ul>
-                                <li class="dropdown__item dropdown__item--line-top">Otros cursos de formación</li>
-                                <!-- Aunque no es un elemento en sí de la lista (al ser un pseudo encabezado),tal vez se le puede aplicar la por si no recordamos la cuestión del cambio de rol. Sería una opcion? -->
-                                <li class="dropdown__item"><a href="#">Bootcamp</a></li>
+                                <li><a href="#" class="dropdown__item">Bootcamp</a></li>
                             </ul>
+
                         </ul>
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn--warning">Buscar</button>
+                <button type="submit" class="search__btn">Buscar</button>
             </form>
-        </nav>
+        </div>
 
-        <h1 class="header__main">¡Hola a todos!</h1>
-        <p class="header__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
-            fugiat eligendi <strong>quidem in iure tempora</strong>! Consectetur ex, autem amet maxime odit. Adipisci
-            quod, tenetur
-            reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#" class="btn btn--success">Más información</a>
+        <div class="jumbotron">
+
+            <h1 class="jumbotron__heading">Hola a Todos!</h1>
+            <div class="jumbotron__body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In a dolor temporibus corrupti qui, commodi
+                    voluptates mollitia, facilis <strong>consequatur accusantium eius</strong> tempora adipisci aperiam
+                    illum
+                    reprehenderit culpa
+                    amet itaque dignissimos.</p>
+
+                <a href="#" class="jumbotron__btn btn btn--success btn--lg">Más información</a>
+            </div>
+        </div>
     </header>
 
-    <main class="main">
-        <!-- Inicio de los cursos -->
-        <div class="courses-container">
-            <article class="course">
-                <h2 class="course__heading"><a href="#">Angular 7 + Animations</a></h2>
-                <img src="images/01.png" width="93" height="93" alt="" class="course__img">
-                <p class="course__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
-                    molestiae
-                    fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
-                    tenetur
-                    reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.
-                </p>
+    <main>
+
+        <div class="media">
+            <article class="media__item">
+                <h2 class="media__heading"><a href="#" class="media__link">Angular 7 + Animations</a></h2>
+                <img src="..." alt="" class="media__media">
+                <div class="media__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nobis quidem, voluptatem nam
+                        facere
+                        non fugiat eos laboriosam minima soluta rem quod omnis amet nihil fugit officiis? Fuga, libero
+                        officiis.</p>
+                </div>
             </article>
-            <article class="course">
-                <h2 class="course__heading"><a href="#">Docker + Kubernetes</a></h2>
-                <img src="images/01.png" width="93" height="93" alt="" class="course__img">
-                <p class="course__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
-                    molestiae
-                    fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
-                    tenetur
-                    reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.
-                </p>
+
+            <article class="media__item">
+                <h2 class="media__heading"><a href="#" class="media__link">Docker + Kubernetes</a></h2>
+                <img src="..." alt="" class="media__media">
+                <div class="media__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nobis quidem, voluptatem nam
+                        facere
+                        non fugiat eos laboriosam minima soluta rem quod omnis amet nihil fugit officiis? Fuga, libero
+                        officiis.</p>
+                </div>
             </article>
-            <article class="course">
-                <h2 class="course__heading"><a href="#">NodeJS</a></h2>
-                <img src="images/01.png" width="93" height="93" alt="" class="course__img">
-                <p class="course__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
-                    molestiae
-                    fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod,
-                    tenetur
-                    reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.
-                </p>
+            <article class="media__item">
+                <h2 class="media__heading"><a href="#" class="media__link">NodeJS</a></h2>
+                <img src="..." alt="" class="meida__media">
+                <div class="media__body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nobis quidem, voluptatem nam
+                        facere
+                        non fugiat eos laboriosam minima soluta rem quod omnis amet nihil fugit officiis? Fuga, libero
+                        officiis.</p>
+                </div>
             </article>
         </div>
 
-        <!-- Fin de los cursos -->
+        <article class="subscription">
+            <div class="subscription__container">
+                <div class="col">
+                    <video width="500" height="358" controls class="subscription__media">
+                        <source src="..." type="...">
+                    </video>
+                </div>
+                <div class="col">
+                    <h2 class="subscription__heading">Proximas convocatorias</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis saepe corporis beatae cumque earum
+                        eveniet!</p>
+                    <form action="" class="newsletter">
+                        <label for="email" class="newsletter__label">Indica tu correo electrónico</label>
+                        <input type="email" id="email" class="newsletter__control"
+                            placeholder="Introduce un email válido">
+                        <button type="submit" class="newsletter__btn btn">Me apunto!</button>
+                    </form>
 
-        <!-- Video y suscripcion -->
-        <article class="media-container">
-            <div class="media">
-                <video width="" controls class="media__item">
-                    <source src="..." type="...">
-                </video>
-
-                <h2 class="media__heading">Próximas convocatorias</h2>
-                <p class="media__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
-                    molestiae.
-                </p>
-                <form action="#" class="form">
-                    <label for="email" class="form__label form__label--join"></label>
-                    <input type="email" id="email" placeholder="Introduce un email válido" class="form__input">
-                    <button type="submit" class="btn btn--primary">Me apunto!</button>
-                </form>
+                </div>
+            </div>
+        </article>
+        <article class="jumbotron jumbotron--sm jumbotron--light">
+            <h2 class="jumbotron__heading ">Servicios de apoyo profesional</h2>
+            <div class="jumbotron__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum, qui optio rerum blanditiis
+                    ea
+                    vero perferendis consectetur sequi explicabo deserunt incidunt pariatur enim possimus ducimus
+                    reiciendis
+                    voluptatum quod ipsa.</p>
+                <a href="#" class="jumbotron__btn btn">Lorem ipsum</a>
             </div>
         </article>
 
-        <!-- Fin Video y suscripcion -->
-
-        <!-- Servicio de apoyo -->
-
-        <article>
-            <h2 class="header__main header__main--medium">Servicios de apoyo profesional</h2>
-            <p class="header__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
-                fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
-                reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse
-                aspernatur, natus quidem voluptas.
-            </p>
-
-            <a href="#" class="btn btn--primary">Lorem ipsum</a>
-        </article>
-        <!--Fin Servicio de apoyo -->
-
     </main>
 
-    <footer class="footer">
-        <ul>
-            <li class="footer__link"><a href="#">Inicio</a></li>
-            <li class="footer__link"><a href="#">Servicios</a></li>
-            <li class="footer__link"><a href="#">Nosotros</a></li>
-            <li class="footer__link"><a href="#">Formación</a></li>
-            <li class="footer__link"><a href="#">Referencia</a></li>
-            <li class="footer__link"><a href="#">Contacto</a></li>
+    <footer class="site-footer">
+        <ul class="list-inline">
+            <li class="list-inline__item"><a href="#" class="list-inline__link">Inicio</a></li>
+            <li class="list-inline__item"><a href="#" class="list-inline__link">Servicios</a></li>
+            <li class="list-inline__item"><a href="#" class="list-inline__link">Nosotros</a></li>
+            <li class="list-inline__item"><a href="#" class="list-inline__link">Formación</a></li>
+            <li class="list-inline__item"><a href="#" class="list-inline__link">Referencia</a></li>
+            <li class="list-inline__item"><a href="#" class="list-inline__link">Contacto</a></li>
         </ul>
-        <span class="copy">&copy;Company 2018</span>
-    </footer>
 
+        <span class="site-footer__copy">&copy; Company 2018</span>
+    </footer>
 </body>
 
 </html>
