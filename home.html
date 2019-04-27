@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style-home.css">
+  <script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+    integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="search-small">
+      <form action="#">
+        <button type="button" class="search-small__btn">
+          <svg class="search-small__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966"><path d="M55.146 51.887L41.588 37.786c3.486-4.144 5.396-9.358 5.396-14.786 0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837 1.192-1.147 1.23-3.049.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z"/></svg>
+        </button>
+        <input type="search" class="search-small__control">
+        <button type="button" class="search-small__close ">
+          <svg class="search-small__logo--close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.982 212.982"><path d="M131.804 106.491l75.936-75.936c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.491 81.18 30.554 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.989 6.99-6.989 18.323 0 25.312l75.937 75.936-75.937 75.937c-6.989 6.99-6.989 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0l75.937-75.937 75.937 75.937c6.989 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.322 0-25.312l-75.936-75.936z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+        </button>
+      </form>
+    </div>
+    <button class="navbar__toggler" type="button">
+      <span class="navbar__hamburger"></span>
+      Menú
+    </button>
+    <nav class="navbar">
+        <button type="button" class="search-small__close ">
+            <svg class="search-small__logo--close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.982 212.982"><path d="M131.804 106.491l75.936-75.936c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.491 81.18 30.554 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.989 6.99-6.989 18.323 0 25.312l75.937 75.936-75.937 75.937c-6.989 6.99-6.989 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0l75.937-75.937 75.937 75.937c6.989 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.322 0-25.312l-75.936-75.936z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+          </button>
+      <a href="#" class="navbar__item">Inicio</a>
+      <a href="#" class="navbar__item">Servicios</a>
+      <a href="#" class="navbar__item">Nosotros</a>
+
+      <!-- Dropdown -->
+      <div class="dropdown dropdown--link navbar__item">
+        <button type="button" class="dropdown__btn" aria-expanded="false">Formación</button>
+        <div class="dropdown__menu">
+          <ul class="dropdown__list">
+            <li><a href="#" class="dropdown__item">Angular 7 + Animations - <span class="dropdown__info">18 Ene
+                  2019</span></a></li>
+            <li><a href="#" class="dropdown__item">Angular 7 Avanzado - <span
+                  class="dropdown__info">Proximamente</span></a></li>
+            <li><a href="#" class="dropdown__item">Docker + Kubernetes - <span
+                  class="dropdown__info">Proximamente</span></a></li>
+            <li><a href="#" class="dropdown__item">NodeJS - <span class="dropdown__info">Proximamente</span></a></li>
+            <li><a href="#" class="dropdown__item">CSS + Sass Avanzado - <span
+                  class="dropdown__info">Proximamente</span></a></li>
+            <li><a href="#" class="dropdown__item">VueJS 2 - <span class="dropdown__info">Proximamente</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <!--//.dropdown -->
+
+      <a href="#" class="navbar__item">Referencia</a>
+      <a href="#" class="navbar__item">Contacto</a>
+    </nav>
+
+    <form action="..." class="search">
+      <label for="search" class="search__label">Buscar en Campus</label>
+      <div class="dropdown">
+        <input type="search" id="search" class="dropdown__control" autofocus>
+        <!--<div class="dropdown__menu">
+          <ul>
+            <li><a href="#" class="dropdown__item">Angular 7</a></li>
+            <li><a href="#" class="dropdown__item">Angular 7 + Animations</a></li>
+            <li><a href="#" class="dropdown__item">Angular 7 Avanzado</a></li>
+          </ul>
+          <p role="heading" class="dropdown__heading">Otros cursos de formación</p>
+          <ul>
+            <li><a href="#" class="dropdown__item">Bootcamp</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <button type="submit" class="search__btn">Buscar</button>
+    </form>
+  </header>
+
+  <main>
+
+    <section class="jumbotron">
+      <div class="container">
+        <h1 class="jumbotron__heading">¡Hola a todos!</h1>
+        <div class="jumbotron__body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dignissimos adipisci eum quis ducimus,
+            magni <strong>recusandae quae quo qui</strong>! Dolores tempora deserunt magni dolore minima quis delectus
+            pariatur magnam quibusdam?</p>
+          <a href="#" class="jumbotron__btn btn btn--success btn--lg">Más información</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lista cursos -->
+    <div class="media">
+      <div class="container container--flexbox">
+        <article class="media__item">
+          <h2 class="media__heading"><a href="#" class="media__link">Angular 7 + Animations</a></h2>
+          <img src="images/angular.png" alt="" class="media__media">
+          <div class="media__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia at earum rerum itaque vitae dolorem
+              tempore ab temporibus, exercitationem dolore eligendi molestias impedit consequuntur numquam eaque et quod
+              obcaecati? Ducimus.</p>
+          </div>
+        </article>
+        <article class="media__item">
+          <h2 class="media__heading"><a href="#" class="media__link">Docker + Kubernetes</a></h2>
+          <img src="images/angular.png" alt="" class="media__media">
+          <div class="media__body">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus mollitia culpa provident voluptatum
+              quam ab in, reiciendis assumenda perspiciatis illo inventore accusantium neque cupiditate vitae
+              voluptatem. Quam culpa officia accusamus!</p>
+          </div>
+        </article>
+        <article class="media__item">
+          <h2 class="media__heading"><a href="#" class="media__link">NodeJS</a></h2>
+          <img src="images/angular.png" alt="" class="media__media">
+          <div class="media__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto harum totam quia sed quae id architecto,
+              soluta aliquid provident odit ad beatae ratione nemo! Totam suscipit voluptatem harum quo repellat.</p>
+          </div>
+        </article>
+      </div>
+    </div> <!-- //.cursos -->
+
+    <article class="subscription">
+      <div class="subscription__col-media">
+        <video width="" controls class="subscription__media">
+          <source src="..." type="...">
+        </video>
+      </div>
+      <div class="subscription__col-body">
+        <h2 class="subscription__heading">Próximas convocatorias</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae.</p>
+        <form action="#" class="newsletter">
+          <div class="newsletter__form">
+            <label for="email" class="newsletter__label">Indica tu correo electrónico</label>
+            <input type="email" id="email" class="newsletter__control" placeholder="Introduce un email válido">
+          </div>
+          <button type="submit" class="newsletter__btn btn">Me apunto!</button>
+        </form>
+      </div>
+    </article>
+
+    <article class="jumbotron jumbotron--sm jumbotron--light">
+      <h2 class="jumbotron__heading">Servicios de apoyo profesional</h2>
+      <div class="jumbotron__body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore rerum illo? Quia fuga deleniti
+          repellat nihil deserunt cum molestiae fugit nemo debitis odio nostrum, rerum consequatur delectus atque
+          fugiat.</p>
+        <a href="#" class="jumbotron__btn btn">Lorem ipsum</a>
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="container--flexbox">
+        <ul class="list-inline">
+          <li class="list-inline__item"><a href="#" class="list-inline__link">Inicio</a></li>
+          <li class="list-inline__item"><a href="#" class="list-inline__link">Servicios</a></li>
+          <li class="list-inline__item"><a href="#" class="list-inline__link">Nosotros</a></li>
+          <li class="list-inline__item"><a href="#" class="list-inline__link">Formación</a></li>
+          <li class="list-inline__item"><a href="#" class="list-inline__link">Referencia</a></li>
+          <li class="list-inline__item"><a href="#" class="list-inline__link">Contacto</a></li>
+        </ul>
+        <span class="site-footer__copy">© Company 2018</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="js/dropdown.js"></script> -->
+
+</body>
+
+</html>

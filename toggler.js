@@ -15,7 +15,7 @@ function init() {
 
   // Search form
   // --------------------------------------------------------
-  var input = document.querySelector('.search__input');
+  var input = document.querySelector('.dropdown__search');
 
   input.onfocus = function(e) {
     this.setAttribute('aria-expanded', 'true');
